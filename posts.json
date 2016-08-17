@@ -10,5 +10,14 @@
     "date": "August 17th, 2016",
     "content": "A lot of money.",
     "image": "http://tenthlifecats.org/mm/images/3TBKs.jpg"
+  }],
+  "authors": [{
+    "fullName": "The Quizster",
+    "positionTitle": "Quiz Master",
+    "bio": "I make quizzes for a living!"
+  }, {
+    "fullName": "Oregon Humane Society",
+    "positionTitle": "Animal Care Location",
+    "bio": "Please adopt!"
   }]
 }
