@@ -3,5 +3,6 @@ import DS from 'ember-data';
 export default DS.Model.extend ({
   fullName: DS.attr(),
   positionTitle: DS.attr(),
-  bio: DS.attr()
+  bio: DS.attr(),
+  posts: DS.hasMany("post", {async: true})
 });
