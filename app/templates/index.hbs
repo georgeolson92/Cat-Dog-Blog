@@ -6,6 +6,6 @@
 
 <ul>
   {{#each model as |post|}}
-    <li>{{post.title}} by {{post.author}}, {{post.date}}</li>
+    {{post-tile post=post}}
   {{/each}}
 </ul>
