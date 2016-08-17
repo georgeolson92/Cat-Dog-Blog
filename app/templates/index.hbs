@@ -3,3 +3,9 @@
 <p>
   Check out our stories below!
 </p>
+
+<ul>
+  {{#each model as |post|}}
+    <li>{{post.title}} by {{post.author}}, {{post.date}}</li>
+  {{/each}}
+</ul>
