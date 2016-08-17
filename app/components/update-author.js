@@ -13,7 +13,7 @@ export default Ember.Component.extend ({
         bio: this.get("bio")
       };
       this.set("updateAuthorForm", false);
-      this.sendAction("update", author, params)
+      this.sendAction("update", author, params);
     }
   }
 });
