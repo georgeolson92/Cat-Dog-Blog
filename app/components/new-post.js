@@ -19,3 +19,5 @@ export default Ember.Component.extend ({
     }
   }
 });
+
+$("new-post-form").find("input, textarea").val("");
