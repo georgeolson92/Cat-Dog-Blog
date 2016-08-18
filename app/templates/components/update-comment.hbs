@@ -13,7 +13,7 @@
       <label for="commentText">Content</label>
       {{textarea value=commentText id="commenttext" placeholder=comment.commentText}}
     </div>
-    <button {{action 'updateComment'}}>Update</button>
+    <button {{action 'updateComment' comment}}>Update</button>
   </form>
 {{else}}
   <button {{action "updateCommentForm"}}>Update</button>

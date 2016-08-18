@@ -6,7 +6,7 @@ export default Ember.Component.extend ({
       this.sendAction("update", author, params);
     },
     delete(author) {
-      if (confirm('Are you sure you want to delete this rental?')) {
+      if (confirm('Are you sure you want to delete this author?')) {
         this.sendAction("destroyAuthor", author);
       }
     }

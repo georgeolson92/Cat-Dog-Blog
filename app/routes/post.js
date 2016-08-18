@@ -34,7 +34,7 @@ export default Ember.Route.extend({
     },
     updateComment(comment, params) {
       Object.keys(params).forEach(function(key) {
-        if(params[key] !== undefined) {
+        if(params[key]!==undefined) {
           comment.set(key,params[key]);
         }
       });
