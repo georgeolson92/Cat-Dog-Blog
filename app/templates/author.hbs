@@ -1,16 +1,13 @@
-<h1>More information about {{model.fullName}}</h1>
-
-{{update-author author=model update="update"}}
 {{author-detail author=model destroyAuthor="destroyAuthor"}}
+{{update-author author=model update="update"}}
 
-<div>
-  <h2>Stories by {{author.fullName}}</h2>
+<div class="stories">
+  <h2>Stories by {{model.fullName}}</h2>
   <ul>
     {{#each model.posts as |post|}}
       {{post-tile post=post}}
     {{/each}}
   </ul>
+  <h2>Create a New Post</h2>
+  {{new-post save2="save3" author=model}}
 </div>
-
-<h2>Create a New Post</h2>
-{{new-post save2="save3" author=model}}

@@ -1,5 +1,6 @@
 body {
   font-family: serif;
+  font-size:2em;
 }
 
 /*Navbar Styling*/
@@ -66,14 +67,15 @@ img {
 
 /*Admin Styling*/
 
-.btn-primary {
+.btn-primary, .btn-danger {
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 20pt;
+  margin-top: 15px;
 }
 
-/*New Author Styling*/
+/*Author Styling*/
 
 .new-author {
   text-align: center;
@@ -90,4 +92,24 @@ img {
 .new-author .btn-success {
   font-size: 20pt;
   margin-top: 35px;
+}
+
+.detail h2, .stories h2 {
+  text-align: center;
+  font-size: 25pt;
+  margin-top: 50px;
+}
+
+.detail p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.stories {
+  margin-top: 50px;
+}
+
+.end {
+  margin-bottom: 200px;
 }

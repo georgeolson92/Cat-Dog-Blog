@@ -1,6 +1,8 @@
-<h1>{{author.fullName}}</h1>
-<h2>{{author.positionTitle}}</h2>
-<p>
-  {{author.bio}}
-</p>
-<button {{action "delete" author}}>Delete Author</button>
+<div class="detail">
+  <h1 class="page-header">{{author.fullName}}</h1>
+  <h2>{{author.positionTitle}}</h2>
+  <p>
+    {{author.bio}}
+  </p>
+  <button {{action "delete" author}} class="btn btn-danger">Delete Author</button>
+</div>

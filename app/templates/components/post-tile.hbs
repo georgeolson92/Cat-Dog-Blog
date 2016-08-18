@@ -1,9 +1,9 @@
 <div class="row post-tile">
   <div class="col-sm-5">
   {{#link-to 'post' post.id}}
-    <h2>{{post.title}}</h2>
+    <h2> {{post.title}} </h2>
   {{/link-to}}
-    <h3>{{post.author.fullName}} | {{post.date}}</h3>
+    <h3>{{#link-to "author" post.author.id}} {{post.author.fullName}} {{/link-to}} | {{post.date}}</h3>
   </div>
   <div class="col-sm-7">
     <img src={{post.image}} alt={{post.title}}/>

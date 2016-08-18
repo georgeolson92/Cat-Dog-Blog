@@ -3,18 +3,18 @@
   <form>
     <div class="form-group">
       <label for="fullName">Full Name</label>
-      {{input value=fullName id="fullName" placeholder=post.fullName}}
+      {{input value=fullName id="fullName" placeholder=post.fullName class="form-control"}}
     </div>
     <div class="form-group">
       <label for="positionTitle">Position Title</label>
-      {{input value=positionTitle id="positionTitle" placeholder=post.positionTitle}}
+      {{input value=positionTitle id="positionTitle" placeholder=post.positionTitle class="form-control"}}
     </div>
     <div class="form-group">
       <label for="bio">Bio</label>
-      {{textarea value=bio id="bio" placeholder=post.bio}}
+      {{textarea value=bio id="bio" placeholder=post.bio class="form-control"}}
     </div>
-    <button {{action 'update' author}}>Save</button>
+    <button {{action 'update' author}} class="btn btn-primary">Save</button>
   </form>
 {{else}}
-  <button {{action "updateAuthorForm"}}>Update</button>
+  <button {{action "updateAuthorForm"}} class="btn btn-primary">Update Author</button>
 {{/if}}
