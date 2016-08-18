@@ -7,7 +7,7 @@ export default Ember.Component.extend({
         userName: this.get('userName'),
         commentDate: this.get('commentDate'),
         commentText: this.get('commentText'),
-        postTitle: this.get('postTitle')
+        post: this.get('post')
       };
       this.sendAction('saveComment', params);
     }

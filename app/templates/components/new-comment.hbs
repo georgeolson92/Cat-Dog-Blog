@@ -1,4 +1,3 @@
-<h3>Add a new comment</h3>
   <form>
     <div class="form-group">
       <label for="userName">User Name</label>
@@ -11,10 +10,6 @@
     <div class="form-group">
       <label for="commentText">Content</label>
       {{input value=commentText id="commentText"}}
-    </div>
-    <div class="form-group">
-      <label for="postTitle">Post</label>
-      {{input value=postTitle id="postTitle" placeholder=post.title}}
     </div>
     <button {{action 'saveComment'}}>Save</button>
   </form>

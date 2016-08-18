@@ -5,15 +5,6 @@ export default Ember.Route.extend ({
     return this.store.findRecord("author", params.author_id);
   },
   actions: {
-    save3(params) {
-      var newPost = this.store.createRecord("post", params);
-      var author = params.author;
-      author.get("posts").addObject(newPost);
-      newPost.save().then(function() {
-        return author.save();
-      });
-      this.transitionTo("author", params.author);
-    },
     update(author, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
@@ -31,6 +22,15 @@ export default Ember.Route.extend ({
         return author.destroyRecord();
       });
       this.transitionTo("index");
+    },
+    save3(params) {
+      var newPost = this.store.createRecord("post", params);
+      var author = params.author;
+      author.get("posts").addObject(newPost);
+      newPost.save().then(function() {
+        return author.save();
+      });
+      this.transitionTo("author", params.author);
     }
   }
 });

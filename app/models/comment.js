@@ -4,5 +4,5 @@ export default DS.Model.extend({
   userName: DS.attr(),
   commentDate: DS.attr(),
   commentText: DS.attr(),
-  postTitle: DS.attr()
+  post: DS.belongsTo("post", {async: true}),
 });
