@@ -1,4 +1,6 @@
 <p>{{comment.userName}} | {{comment.commentDate}}</p>
 <p>{{comment.commentText}}</p>
 
+{{update-comment comment=comment updateComment="updateComment"}}
+
 <button {{action "delete" comment}}>Delete</button>

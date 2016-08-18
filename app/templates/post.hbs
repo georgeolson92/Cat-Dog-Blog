@@ -6,7 +6,7 @@
 <h2>Comments</h2>
 <ul>
   {{#each model.comments as |comment|}}
-    {{comment-tile comment=comment destroyComment="destroyComment"}}
+    {{comment-tile comment=comment updateComment="updateComment" destroyComment="destroyComment"}}
   {{/each}}
 </ul>
 

@@ -1,15 +1,15 @@
-  <form>
-    <div class="form-group">
-      <label for="userName">User Name</label>
-      {{input value=userName id="userName"}}
-    </div>
-    <div class="form-group">
-      <label for="commentDate">Date</label>
-      {{input value=commentDate id="commentDate"}}
-    </div>
-    <div class="form-group">
-      <label for="commentText">Content</label>
-      {{input value=commentText id="commentText"}}
-    </div>
-    <button {{action 'saveComment'}}>Save</button>
-  </form>
+<form>
+  <div class="form-group">
+    <label for="userName">User Name</label>
+    {{input value=userName id="userName"}}
+  </div>
+  <div class="form-group">
+    <label for="commentDate">Date</label>
+    {{input value=commentDate id="commentDate"}}
+  </div>
+  <div class="form-group">
+    <label for="commentText">Content</label>
+    {{textarea value=commentText id="commentText"}}
+  </div>
+  <button {{action 'saveComment'}}>Save</button>
+</form>
