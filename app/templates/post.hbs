@@ -4,9 +4,11 @@
 {{post-detail post=model destroyPost="destroyPost"}}
 
 <h2>Comments</h2>
-{{#each model.comments as |comment|}}
-  {{comment-tile comment=comment}}
-{{/each}}
+<ul>
+  {{#each model.comments as |comment|}}
+    {{comment-tile comment=comment destroyComment="destroyComment"}}
+  {{/each}}
+</ul>
 
 <h2>Create a New Comment</h2>
 {{new-comment saveComment="saveComment" post=model}}
