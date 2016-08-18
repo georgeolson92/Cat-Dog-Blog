@@ -1,20 +1,22 @@
-{{#if addNewAuthor}}
+<div class="new-author">
+  {{#if addNewAuthor}}
   <h1>New Author</h1>
-  <form>
-    <div class="form-group">
+  <form class="row">
+    <div class="form-group col-sm-6">
       <label for="fullName">Full Name</label>
-      {{input value=fullName id="fullName"}}
+      {{input value=fullName id="fullName" class="form-control"}}
     </div>
-    <div class="form-group">
+    <div class="form-group col-sm-6">
       <label for="positionTitle">Position Title</label>
-      {{input value=positionTitle id="positionTitle"}}
+      {{input value=positionTitle id="positionTitle" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="bio">Bio</label>
-      {{textarea value=bio id="bio"}}
+      {{textarea value=bio id="bio" class="form-control"}}
     </div>
-    <button {{action 'save4'}}>Save</button>
+    <button {{action 'save4'}} class="btn btn-success">Save</button>
   </form>
-{{else}}
-  <button {{action 'authorFormShow'}}>New Author</button>
-{{/if}}
+  {{else}}
+  <button {{action 'authorFormShow'}} class="btn btn-primary">New Author</button>
+  {{/if}}
+</div>
